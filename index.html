@@ -1,400 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- SEO Meta Tags -->
-    <title>EternaFix | Digital Transformation & Software Solutions</title>
-    <meta name="description" content="EternaFix transforms manual workflows into cost-effective, automated, and AI-ready digital systems for SMEs, colleges, and non-profits. Open-source technology with 100% client infrastructure ownership.">
-    <meta name="keywords" content="digital transformation, workflow automation, process digitalization, open source software development, AI integration, non-profit technology, college workflow software, low cost IT solutions, EternaFix">
-    <meta name="author" content="EternaFix Software Solutions">
-    <meta name="robots" content="index, follow">
-
-    <!-- Domain Relative Favicon Links -->
+    <title>EternaFix | Streamline Your Business Operations</title>
+    <meta name="description" content="We help small businesses, NGOs, and educational institutions replace messy spreadsheets and manual paperwork with simple, custom digital tools you own forever.">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="favicon.ico">
-
-    <!-- Search Engine Canonical Tag -->
-    <link rel="canonical" href="./">
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="EternaFix | Transform Manual Processes into Digital Efficiency">
-    <meta property="og:description" content="Cost-efficient software engineering for SMEs, non-profits, and colleges. Open-source built, project-based, and completely client-owned.">
-    <meta property="og:image" content="logo.png">
-    <meta property="og:site_name" content="EternaFix">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="EternaFix Software Solutions">
-    <meta name="twitter:description" content="Modernizing manual business operations with automated, AI-ready, open-source tech stack solutions.">
-    <meta name="twitter:image" content="logo.png">
-
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "EternaFix Software Solutions",
-      "image": "logo.png",
-      "description": "Transforming historic manual processes into automated, digital, and AI-ready workflows using cost-effective open-source infrastructure.",
-      "priceRange": "$$",
-      "knowsAbout": [
-        "Digital Transformation",
-        "Workflow Automation",
-        "Open-Source Architecture",
-        "AI Integration",
-        "Software Engineering"
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
-            --brand-purple: #401f71;
-            --brand-purple-dark: #371F54;
-            --text-primary: #0F172A;
-            --text-secondary: #475569;
-            --text-muted: #64748B;
-            --bg-main: #FFFFFF;
-            --bg-alt: #F8FAFC;
-            --border-color: #E2E8F0;
-            --max-width: 1140px;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-main);
-            color: var(--text-primary);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Top Bar / Navigation: Purple background blends the logo seamlessly */
-        nav {
-            background-color: var(--brand-purple);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav-container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 12px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-logo {
-            height: 42px;
-            width: auto;
-            display: block;
-        }
-
-        .nav-cta {
-            font-size: 0.88rem;
-            font-weight: 600;
-            color: #ffffff;
-            text-decoration: none;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            padding: 8px 18px;
-            border-radius: 4px;
-            transition: all 0.2s ease;
-        }
-
-        .nav-cta:hover {
-            background-color: #ffffff;
-            color: var(--brand-purple);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 80px 24px 60px 24px;
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-
-        .hero-label {
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--brand-purple);
-            margin-bottom: 16px;
-            display: block;
-        }
-
-        .hero h1 {
-            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-            font-size: clamp(2.2rem, 5vw, 3.5rem);
-            font-weight: 400;
-            line-height: 1.15;
-            color: var(--text-primary);
-            letter-spacing: -0.5px;
-            margin-bottom: 24px;
-            max-width: 900px;
-        }
-
-        .hero p {
-            font-size: clamp(1.05rem, 2vw, 1.25rem);
-            color: var(--text-secondary);
-            max-width: 780px;
-            font-weight: 400;
-            line-height: 1.6;
-            margin-bottom: 36px;
-        }
-
-        .btn-primary {
-            display: inline-block;
-            background-color: var(--brand-purple);
-            color: #ffffff;
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 14px 32px;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: background-color 0.2s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--brand-purple-dark);
-        }
-
-        /* Value Pillars Section */
-        .pillars-section {
-            background-color: var(--bg-alt);
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
-            padding: 80px 24px;
-        }
-
-        .section-container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-
-        .section-header {
-            margin-bottom: 48px;
-        }
-
-        .section-header h2 {
-            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-            font-size: 2rem;
-            font-weight: 400;
-            color: var(--text-primary);
-            margin-bottom: 12px;
-        }
-
-        .section-header p {
-            color: var(--text-secondary);
-            font-size: 1.05rem;
-        }
-
-        .pillars-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 32px;
-        }
-
-        .pillar-card {
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-top: 4px solid var(--brand-purple);
-            padding: 32px 24px;
-            border-radius: 2px;
-        }
-
-        .pillar-card h3 {
-            font-size: 1.15rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 12px;
-        }
-
-        .pillar-card p {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            line-height: 1.55;
-        }
-
-        /* Engagement Model Section */
-        .model-section {
-            padding: 80px 24px;
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-
-        .model-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-            align-items: center;
-        }
-
-        .model-text h2 {
-            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-            font-size: 2.2rem;
-            font-weight: 400;
-            margin-bottom: 20px;
-        }
-
-        .model-text p {
-            color: var(--text-secondary);
-            font-size: 1.05rem;
-            margin-bottom: 16px;
-        }
-
-        .model-list {
-            list-style: none;
-            margin-top: 24px;
-        }
-
-        .model-list li {
-            position: relative;
-            padding-left: 28px;
-            margin-bottom: 16px;
-            color: var(--text-primary);
-            font-weight: 500;
-        }
-
-        .model-list li::before {
-            content: "—";
-            position: absolute;
-            left: 0;
-            color: var(--brand-purple);
-            font-weight: bold;
-        }
-
-        /* Metric Highlights (Replaces duplicate bottom logo) */
-        .metric-card {
-            background-color: var(--bg-alt);
-            border: 1px solid var(--border-color);
-            padding: 40px;
-            border-radius: 4px;
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-
-        .metric-item {
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 16px;
-        }
-
-        .metric-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .metric-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--brand-purple);
-            display: block;
-        }
-
-        .metric-label {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-        }
-
-        /* Call to Action Banner */
-        .cta-banner {
-            background-color: var(--brand-purple);
-            color: #ffffff;
-            padding: 60px 24px;
-            text-align: center;
-        }
-
-        .cta-banner h2 {
-            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-            font-size: 2.2rem;
-            font-weight: 400;
-            margin-bottom: 16px;
-        }
-
-        .cta-banner p {
-            font-size: 1.1rem;
-            color: #E2D8F0;
-            margin-bottom: 32px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .btn-white {
-            display: inline-block;
-            background-color: #ffffff;
-            color: var(--brand-purple);
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 14px 36px;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: background-color 0.2s ease;
-        }
-
-        .btn-white:hover {
-            background-color: #F8FAFC;
-        }
-
-        /* Footer */
-        footer {
-            border-top: 1px solid var(--border-color);
-            background-color: var(--bg-alt);
-            padding: 40px 24px;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .footer-container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-
-        footer a {
-            color: var(--text-primary);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hero { padding: 48px 20px 40px 20px; }
-            .pillars-section, .model-section { padding: 48px 20px; }
-            .model-grid { grid-template-columns: 1fr; gap: 32px; }
-            .footer-container { flex-direction: column; text-align: center; }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Enterprise Navigation Header -->
+    <!-- Navigation Header -->
+    <!-- Navigation Header -->
     <nav>
         <div class="nav-container">
-            <img src="logo.png" alt="EternaFix Software Solutions Logo" class="nav-logo">
-            <a href="mailto:solutions@eternafix.com" class="nav-cta">Inquire Today</a>
+            <a href="./"><img src="logo.png" alt="EternaFix Logo" class="nav-logo"></a>
+            <div class="nav-actions">
+                <!-- Universally Recognizable Language Switcher -->
+                <div class="language-selector">
+                    <!-- Globe Icon -->
+                    <svg class="icon-globe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <select id="language-select" aria-label="Change Language" title="Change Language">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="bn">বাংলা (Bengali)</option>
+                        <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                        <option value="te">తెలుగు (Telugu)</option>
+                        <option value="ta">தமிழ் (Tamil)</option>
+                        <option value="ml">മലയാളം (Malayalam)</option>
+                        <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+                        <option value="ar">العربية (Arabic)</option>
+                    </select>
+                    <!-- Custom Chevron Arrow -->
+                    <svg class="icon-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <a href="mailto:solutions@eternafix.com" class="nav-cta" data-i18n="nav_cta">Book Free Consultation</a>
+            </div>
         </div>
     </nav>
 
@@ -402,94 +50,103 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <span class="hero-label">Software Engineering & Digital Transformation</span>
-            <h1>Modernizing operational workflows for growing organizations.</h1>
-            <p>We build cost-efficient digital solutions for SMEs, educational institutes, and non-profits—replacing legacy manual processes with automated systems engineered for seamless future AI integration.</p>
-            <a href="mailto:solutions@eternafix.com" class="btn-primary">Initiate a Consult</a>
+            <span class="hero-label" data-i18n="hero_label">Custom Tools for Growing Organizations</span>
+            <h1 data-i18n="hero_title">Stop drowning in paperwork and messy spreadsheets.</h1>
+            <p data-i18n="hero_desc">We build simple, custom digital tools that automate your daily administrative work. No monthly subscription fees. You own the software forever, and we prepare your business to use smart AI insights down the road.</p>
+            <div class="hero-actions">
+                <a href="mailto:solutions@eternafix.com" class="btn-primary" data-i18n="hero_cta">Book Your Free Gap-Analysis</a>
+                <span class="action-note" data-i18n="hero_note">We find your workflow gaps for free. You only pay to fix them.</span>
+            </div>
         </section>
 
-        <!-- Value Pillars Grid -->
+        <!-- The EternaFix Benefit -->
         <section class="pillars-section">
             <div class="section-container">
                 <div class="section-header">
-                    <h2>Core Engineering Principles</h2>
-                    <p>Designed specifically to address business bottlenecks with zero vendor lock-in.</p>
+                    <h2 data-i18n="pillars_title">How We Benefit Your Organization</h2>
+                    <p data-i18n="pillars_subtitle">Designed around how you actually work, built to save you time and money.</p>
                 </div>
                 
                 <div class="pillars-grid">
                     <article class="pillar-card">
-                        <h3>Process Automation</h3>
-                        <p>Transition manual, paper-heavy workflows into digital touchpoints designed for modern efficiency and operational speed.</p>
+                        <h3 data-i18n="pillar1_title">Save Hours Every Week</h3>
+                        <p data-i18n="pillar1_desc">Say goodbye to manual data entry and repetitive grunt work. We turn tedious daily tasks into automated clicks.</p>
                     </article>
 
                     <article class="pillar-card">
-                        <h3>Open-Source Infrastructure</h3>
-                        <p>Leverage robust non-proprietary software frameworks and free tiers to eliminate initial software licensing costs.</p>
+                        <h3 data-i18n="pillar2_title">Pay Once, Own it Forever</h3>
+                        <p data-i18n="pillar2_desc">Stop renting your business tools. We build your software, hand over the keys, and never charge you a monthly subscription fee.</p>
                     </article>
 
                     <article class="pillar-card">
-                        <h3>Full Client Ownership</h3>
-                        <p>We build directly inside your environment. You maintain 100% legal ownership and control over your deployment, source code, and data.</p>
+                        <h3 data-i18n="pillar3_title">Get Ready for Tomorrow</h3>
+                        <p data-i18n="pillar3_desc">We organize your messy records into clean systems today, so tomorrow you can use AI to automatically summarize expenses or forecast trends.</p>
                     </article>
 
                     <article class="pillar-card">
-                        <h3>AI-Ready Architecture</h3>
-                        <p>Clean, structure, and organize your operational data today so AI tools can be integrated seamlessly whenever you choose.</p>
+                        <h3 data-i18n="pillar4_title">Built Just For You</h3>
+                        <p data-i18n="pillar4_desc">You shouldn't have to change your business to fit generic software. We build tools that perfectly match your exact workflow.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Engagement Model Section -->
+        <!-- Concept & Video Showcase -->
+        <section class="video-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 data-i18n="video_title">Concept Showcases</h2>
+                    <p data-i18n="video_subtitle">Watch these animated presentations to see the types of tools we can engineer for your specific industry.</p>
+                </div>
+                <div class="video-grid">
+                    <div class="video-wrapper">
+                        <span class="solution-tag" data-i18n="tag_buildings">For Buildings & Societies</span>
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" title="Maintenance Tracker Concept" frameborder="0" allowfullscreen></iframe>
+                        <h4 data-i18n="video1_title">Concept: Automated Maintenance Tracker</h4>
+                        <p data-i18n="video1_desc">A proposed system to track building expenses and use AI to reconcile payments directly with bank statements.</p>
+                    </div>
+                    <div class="video-wrapper">
+                        <span class="solution-tag" data-i18n="tag_retail">For Retail & Shops</span>
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" title="Inventory Manager Concept" frameborder="0" allowfullscreen></iframe>
+                        <h4 data-i18n="video2_title">Concept: Smart Inventory Manager</h4>
+                        <p data-i18n="video2_desc">A proposed tool to monitor stock levels, identify supply chain gaps, and automate reordering alerts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Engagement Model -->
         <section class="model-section">
             <div class="model-grid">
                 <div class="model-text">
-                    <h2>Transparent, Project-Based Delivery</h2>
-                    <p>Unlike standard SaaS vendors, EternaFix operates on a clean milestone basis. We deliver fixed-scope digital upgrades tailored strictly to your operational goals.</p>
+                    <h2 data-i18n="model_title">Our "Identify First, Pay Later" Process</h2>
+                    <p data-i18n="model_desc">We don't sell software out of a box. We partner with you to find exactly where your business is losing time and money.</p>
                     <ul class="model-list">
-                        <li>No recurring SaaS subscription charges</li>
-                        <li>Dedicated execution based on custom requirements</li>
-                        <li>Targeted at SMEs, colleges, and non-profit institutions</li>
+                        <li><strong data-i18n="model_step1_strong">Step 1: The Free Audit.</strong> <span data-i18n="model_step1_text">We sit down with you to understand your daily headaches.</span></li>
+                        <li><strong data-i18n="model_step2_strong">Step 2: The Gap Analysis.</strong> <span data-i18n="model_step2_text">We map out exactly where automation can save you hours.</span></li>
+                        <li><strong data-i18n="model_step3_strong">Step 3: The Custom Build.</strong> <span data-i18n="model_step3_text">Only if you like our plan, you pay us to build your customized, subscription-free solution.</span></li>
                     </ul>
-                </div>
-
-                <!-- Clean Enterprise Metric Card replacing the bottom logo -->
-                <div class="metric-card">
-                    <div class="metric-item">
-                        <span class="metric-number">100%</span>
-                        <span class="metric-label">Client Infrastructure & Code Ownership</span>
-                    </div>
-                    <div class="metric-item">
-                        <span class="metric-number">$0</span>
-                        <span class="metric-label">Recurring SaaS Platform Lock-in Fees</span>
-                    </div>
-                    <div class="metric-item">
-                        <span class="metric-number">Open-Source</span>
-                        <span class="metric-label">First Architectural Philosophy</span>
-                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Call to Action Banner -->
         <section class="cta-banner">
-            <h2>Ready to transform your manual operations?</h2>
-            <p>Connect with our engineering team to discuss your project requirements and scope a custom digital solution.</p>
-            <a href="mailto:solutions@eternafix.com" class="btn-white">Contact EternaFix</a>
+            <h2 data-i18n="cta_title">Let's find the gaps in your workflow.</h2>
+            <p data-i18n="cta_desc">Schedule a free, no-obligation consultation today. We will review your manual processes and show you exactly how to automate them.</p>
+            <a href="mailto:solutions@eternafix.com" class="btn-white" data-i18n="cta_btn">Claim Your Free Consultation</a>
         </section>
     </main>
 
-    <!-- Enterprise Footer -->
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <div>
-                &copy; 2026 EternaFix Software Solutions. All rights reserved.
-            </div>
-            <div>
-                Direct Inquiries: <a href="mailto:solutions@eternafix.com">solutions@eternafix.com</a>
-            </div>
+            <div data-i18n="footer_rights">&copy; 2026 EternaFix Software Solutions.</div>
+            <div><span data-i18n="footer_inquiries">Direct Inquiries:</span> <a href="mailto:solutions@eternafix.com">solutions@eternafix.com</a></div>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
